@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  max-width: 1540px;
+  max-height: 900px;
+  background-color: rgb(240, 208, 208)
+}
+
+.main {
+  width: 92%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.input {
+  width: 60%;
+  height: 25%;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  color: #4b2424;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  resize: none;
+  background-color:  rgba(124, 99, 91, 0.726);
+  box-shadow: -11px 34px 60px 61px rgba(151, 132, 126, 0.5);
+}
+
+.keyboard {
+  width: 70%;
+  height: 360px;
+  border: 1px solid rgb(56, 45, 45);
+  border-radius: 5px;
+  position: absolute;
+  left: 12%;
+  bottom: 10%;
+  margin: 0 auto;
+  padding: 0 2% 0 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+  font-size: calc(0.7vw + 15px);
+  font-weight: 600;
+  color: #131313;
+  background: rgb(77 67 67);
+}
+
+.text {
+  position: absolute;
+  left: 40%;
+  bottom: 3%;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(0.7vw + 7px);
+  color: #131313;
+  user-select: none;
+}
+
+.keyboard__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.keyboard__row .btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: rgba(212, 145, 145, 0.9);
+  border: 1px solid  rgba(37, 35, 35, 0.5);
+  transition-property: background-color, border-radius;
+  transition-duration: 0.1s;
+  user-select: none;
+
+}
+
+.keyboard__row .sys-btn {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.keyboard__row .btn{
+  width: 5%;
+}
+
+#Space {
+  width: 35%;
+}
+
+#Enter {
+  width: 10%;
+  font-size: calc(0.7vw + 15px);
+}
+
+#CapsLock  {
+  width: 8%;
+  font-size: calc(0.7vw + 7px);
+}
+
+#Backspace {
+  width: 10%;
+  font-size: calc(0.7vw + 10px);
+}
+
+#ShiftLeft {
+  width: 9%;
+  font-size: calc(0.7vw + 10px);
+}
+
+#ShiftRight {
+  width: 6%;
+  font-size: calc(0.7vw + 10px);
+}
+
+#ArrowUp {
+  font-size: calc(0.7vw + 10px);
+}
+
+#ArrowDown {
+  margin-right: 4px;
+  font-size: calc(0.7vw + 10px);
+}
+
+#ArrowLeft {
+  font-size: calc(0.7vw + 10px);
+}
+
+#ArrowRight {
+  font-size: calc(0.7vw + 10px);
+}
+
+#del {
+  font-size: calc(0.7vw + 10px);
+}
+
+#Tab {
+  font-size: calc(0.7vw + 10px);
+}
+
+#ControlRight {
+  font-size: calc(0.7vw + 10px);
+}
+
+#ControlLeft {
+  font-size: calc(0.7vw + 10px);
+}
+
+#AltRight {
+  font-size: calc(0.7vw + 10px);
+}
+
+#AltLeft {
+  font-size: calc(0.7vw + 10px);
+}
+
+#MetaLeft {
+  font-size: calc(0.7vw + 10px);
+}
